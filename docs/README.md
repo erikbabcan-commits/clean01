@@ -2,15 +2,15 @@
 
 PWA dashboard, ktorý spája statické projekty, GitHub repozitáre, Vercel projekty a lokálne priečinky do jednej timeline.
 
-| Dokument | Obsah |
-| --- | --- |
-| [FEATURES.md](FEATURES.md) | Čo appka robí, obrazovky, správanie na mobile/desktope |
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Štruktúra kódu, dátový tok, moduly, rozhodnutia |
-| [DEVELOPMENT.md](DEVELOPMENT.md) | Lokálny vývoj, skripty, testy, štýl kódu |
-| [DEPLOYMENT.md](DEPLOYMENT.md) | Vercel, CI, cache, rollback |
-| [SECURITY.md](SECURITY.md) | CSP, tokeny, ukladanie dát, lokálny skener |
-| [LOCAL-SCANNER.md](LOCAL-SCANNER.md) | Companion server pre lokálne projekty |
-| [CHANGELOG.md](CHANGELOG.md) | História zmien |
+| Dokument                             | Obsah                                                  |
+| ------------------------------------ | ------------------------------------------------------ |
+| [FEATURES.md](FEATURES.md)           | Čo appka robí, obrazovky, správanie na mobile/desktope |
+| [ARCHITECTURE.md](ARCHITECTURE.md)   | Štruktúra kódu, dátový tok, moduly, rozhodnutia        |
+| [DEVELOPMENT.md](DEVELOPMENT.md)     | Lokálny vývoj, skripty, testy, štýl kódu               |
+| [DEPLOYMENT.md](DEPLOYMENT.md)       | Vercel, CI, cache, rollback                            |
+| [SECURITY.md](SECURITY.md)           | CSP, tokeny, ukladanie dát, lokálny skener             |
+| [LOCAL-SCANNER.md](LOCAL-SCANNER.md) | Companion server pre lokálne projekty                  |
+| [CHANGELOG.md](CHANGELOG.md)         | História zmien                                         |
 
 ## Rýchly prehľad
 

@@ -45,17 +45,18 @@ Local server → localToProject ─┘        ▲                 ▲
 ## Úvodná obrazovka
 
 `useWelcomeScreen` → fázy `loading → running → fading → done`.
+
 - Štart: `matchMedia('(max-width: 1023px)')` && `shouldPlay(lastActive)`.
 - `visibilitychange`/`pagehide` zapisujú `lastActive` do `sessionStorage`; pri návrate po ≥ 60 min sa fáza resetne na `loading`.
 - Obrázok: `new Image().decode()` vs. 800 ms timeout (čo príde skôr).
 
 ## Kľúčové rozhodnutia
 
-| Rozhodnutie | Dôvod |
-| --- | --- |
-| Fonty cez @fontsource (self-host) | bez requestov na Google (GDPR), fungujú offline |
-| Precache len latin fontov, splash mimo precache | menší SW (~470 kB); desktop splash nesťahuje |
-| Zoom lock iba v standalone | prístupnosť v prehliadači |
-| Tokeny len v pamäti, po importe zahodené | minimalizácia rizika úniku |
-| `sessionStorage` pre splash | prežije reload, zmaže sa pri zatvorení appky |
-| CSP v `vercel.json`, zrkadlená do `vite preview` | jeden zdroj pravdy, chyby vidno lokálne |
+| Rozhodnutie                                      | Dôvod                                           |
+| ------------------------------------------------ | ----------------------------------------------- |
+| Fonty cez @fontsource (self-host)                | bez requestov na Google (GDPR), fungujú offline |
+| Precache len latin fontov, splash mimo precache  | menší SW (~470 kB); desktop splash nesťahuje    |
+| Zoom lock iba v standalone                       | prístupnosť v prehliadači                       |
+| Tokeny len v pamäti, po importe zahodené         | minimalizácia rizika úniku                      |
+| `sessionStorage` pre splash                      | prežije reload, zmaže sa pri zatvorení appky    |
+| CSP v `vercel.json`, zrkadlená do `vite preview` | jeden zdroj pravdy, chyby vidno lokálne         |

@@ -34,6 +34,8 @@ Počúva iba na `127.0.0.1`, je len na čítanie a CORS povolí iba dev porty + 
 `vercel.json` obsahuje build, SPA rewrite, CSP a ďalšie security hlavičky a cache pravidlá (immutable assety, revalidácia `sw.js`/`index.html`).
 Ak pridáš nové API (napr. analytiku), doplň doménu do `connect-src` v CSP.
 
+Kompletná dokumentácia je v [`docs/`](docs/README.md).
+
 ## Bezpečnosť a dáta
 
 - Tokeny (GitHub, Vercel) sú iba v pamäti a po importe sa zahodia; nikdy sa neukladajú.
